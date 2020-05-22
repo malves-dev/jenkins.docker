@@ -10,3 +10,8 @@ A idéia aqui é instalar e configurar o jenkins em cima de uma imagem Docker, d
   - Instalar Open JDK 
   - Instalar Git
   - Link da versão: https://hub.docker.com/malves/lab-devops-jenkins:0.1.0
+
+- Versão 0.2.0
+
+  - Instalar Plugins no Jenkins com base no arquivo plugins.txt
+  - Link da versão: https://hub.docker.com/malves/lab-devops-jenkins:0.2.0
