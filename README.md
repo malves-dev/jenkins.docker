@@ -15,3 +15,14 @@ A idéia aqui é instalar e configurar o jenkins em cima de uma imagem Docker, d
 
   - Instalar Plugins no Jenkins com base no arquivo plugins.txt
   - Link da versão: https://hub.docker.com/malves/lab-devops-jenkins:0.2.0
+
+- Versão 0.3.0
+
+  - Automacão de Backup e Restore
+    - Alterar senha de admin do Jenkins
+    - Configurar JDK no Jenkins
+    - Criar 2 Jobs de teste
+    - Criar backup
+    - Executar backup
+    - Obter backup
+  - Link da versão: https://hub.docker.com/malves/lab-devops-jenkins:0.3.0
