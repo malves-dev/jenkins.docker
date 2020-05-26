@@ -26,3 +26,6 @@ A idéia aqui é instalar e configurar o jenkins em cima de uma imagem Docker, d
     - Executar backup
     - Obter backup
   - Link da versão: https://hub.docker.com/malves/lab-devops-jenkins:0.3.0
+
+  # docker build --tag malves/lab-devops-jenkins:0.3.0
+  # docker run --name jenkins-v030 -p 8080:8080 -v jenkins_home:/var/jenkins_home -v jenkins_backup:/srv/backup malves/lab-devops-jenkins:0.3.0
