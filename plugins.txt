@@ -142,4 +142,4 @@ pipeline-input-step:2.8
 built-on-column:1.1
 blueocean-commons:1.4.2
 thinBackup:1.9
-kubernetes:1.4
+# kubernetes:1.4
