@@ -5,20 +5,20 @@ RUN mkdir /srv/backup && chown jenkins:jenkins /srv/backup
 USER jenkins
 RUN echo latest > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 RUN echo latest > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersion
-COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
-RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
+# COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
+# RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 COPY --chown=jenkins:jenkins config_jenkins /var/jenkins_home
 
 # Comandos relacionados com este arquivo:
 # Cria uma imagem de acordo com os descritivos no Dockerfile
-# docker build . --tag malves/lab-devops-jenkins:0.5.0
+# docker build . --tag malves/lab-devops-jenkins:0.6.0
 # Cria um container respondendo na porta 8080
-# docker run --name jenkins-v050 -p 8080:8080 malves/lab-devops-jenkins:0.5.0
+# docker run --name jenkins-v060 -p 8080:8080 malves/lab-devops-jenkins:0.6.0
 
-# Verificar pasta de backup do container jenkins-v050
-# docker exec -it jenkins-v050 bash
+# Verificar pasta de backup do container jenkins-v060
+# docker exec -it jenkins-v060 bash
 # Verificar volumes de backup no container e local
-# docker inspect jenkins-v050 | grep backup
+# docker inspect jenkins-v060 | grep backup
 # Copia os backups para pasta local
-# docker cp jenkins-v050:/srv/backup ./config_jenkins
+# docker cp jenkins-v060:/srv/backup ./config_jenkins
