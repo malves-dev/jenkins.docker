@@ -12,13 +12,13 @@ COPY --chown=jenkins:jenkins config_jenkins /var/jenkins_home
 
 # Comandos relacionados com este arquivo:
 # Cria uma imagem de acordo com os descritivos no Dockerfile
-# docker build . --tag malves/lab-devops-jenkins:0.4.0
+# docker build . --tag malves/lab-devops-jenkins:0.5.0
 # Cria um container respondendo na porta 8080
-# docker run --name jenkins-v040 -p 8080:8080 malves/lab-devops-jenkins:0.4.0
+# docker run --name jenkins-v050 -p 8080:8080 malves/lab-devops-jenkins:0.5.0
 
-# Verificar pasta de backup do container jenkins-v040
-# docker exec -it jenkins-v040 bash
+# Verificar pasta de backup do container jenkins-v050
+# docker exec -it jenkins-v050 bash
 # Verificar volumes de backup no container e local
-# docker inspect jenkins-v040 | grep backup
+# docker inspect jenkins-v050 | grep backup
 # Copia os backups para pasta local
-# docker cp jenkins-v040:/svr/backup ./config_jenkins
+# docker cp jenkins-v050:/srv/backup ./config_jenkins
