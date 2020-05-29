@@ -12,7 +12,7 @@ COPY --chown=jenkins:jenkins config_jenkins /var/jenkins_home
 
 # Comandos relacionados com este arquivo:
 # Cria uma imagem de acordo com os descritivos no Dockerfile
-# docker build . --tag malves/lab-devops-jenkins:0.6.0
+# docker build . --tag malves/lab-devops-jenkins:0.6.0 --tag malves/lab-devops-jenkins:last
 # Cria um container respondendo na porta 8080
 # docker run --name jenkins-v060 -p 8080:8080 malves/lab-devops-jenkins:0.6.0
 
